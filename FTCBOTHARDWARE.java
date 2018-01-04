@@ -29,7 +29,6 @@ public class FTCBOTHARDWARE {
 
         hMap = ahMap;
 
-        Lift.setDirection(DcMotorSimple.Direction.REVERSE);
 
         FrontLeft = hMap.get(DcMotor.class, "FL");
         FrontRight = hMap.get(DcMotor.class, "FR");
@@ -48,8 +47,8 @@ public class FTCBOTHARDWARE {
 
         FrontLeft.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         FrontRight.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
-        BackLeft.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
-        BackRight.setMode(DcMotor.RunMode.RUN_USING_ENCODER);
+        BackLeft.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
+        BackRight.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
 
         Lift.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
         Shift.setMode(DcMotor.RunMode.RUN_WITHOUT_ENCODER);
